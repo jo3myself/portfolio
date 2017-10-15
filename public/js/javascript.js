@@ -51,7 +51,7 @@ $('.bg-2').parallax({
 $("#send").click(function(){  
 	text=$("#sender-name").val() + $("#email").val() + $("#message").val();
 	console.log(text);
-	$.get("https://stormy-wave-49060.herokuapp.com/send",{text:text},function(data){
+	$.get("http://localhost:3000/send",{text:text},function(data){
 	if(data=="sent") {
 		$('.alert-profile').removeClass('d-none');
 	// 	$('#content').val("");
