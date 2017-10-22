@@ -94,3 +94,7 @@ $('a[href*="#"]')
     }
   }
 });
+
+$(".demo").hover(function(){
+    $(this).popover('toggle');
+});
